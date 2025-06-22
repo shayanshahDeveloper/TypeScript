@@ -1,36 +1,10 @@
-// Annotated TypeScript code String
+// Any type in TypeScript
 
-let myName: string = "Shayan Shah";
-console.log(myName);
+let color: any = "red";
 
-// Annotated TypeScript code Number
+color = 5; // Now color is a number
+color = true; // Now color is a boolean
+console.log(color);
 
-let myAge: number = 0;
-
-console.log(myAge ? "You are hero" : "You are not hero");
-
-// Annotated TypeScript code Boolean
-
-let isMarried: boolean = false;
-console.log(isMarried ? "Married" : "Single");
-
-// Annotated TypeScript code Function
-
-function myNum(Age: number) {
-  if (Age >= 18) {
-    console.log("You are an adult");
-  } else {
-    console.log("You are not an adult");
-  }
-}
-
-myNum(8);
-
-// Inferred TypeScript code
-
-let fName = "Shayan Shah";
-let favNumber = 30;
-let iRight = true;
-
-console.log(`All Inferring Types: ${fName}, ${favNumber}, ${iRight}`);
-// Inferred TypeScript code with function
+// Using any type allows for flexibility, but it sacrifices type safety
+// It's generally better to use more specific types when possible
