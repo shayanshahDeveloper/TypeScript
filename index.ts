@@ -1,10 +1,17 @@
-// Any type in TypeScript
+// regular Funaction
 
-let color: any = "red";
+function addOne(num: number) {
+  return num + 1;
+}
 
-color = 5; // Now color is a number
-color = true; // Now color is a boolean
-console.log(color);
+const result = addOne(13);
 
-// Using any type allows for flexibility, but it sacrifices type safety
-// It's generally better to use more specific types when possible
+console.log(result);
+
+// Arrow Function
+
+const double = (x: number, y: number) => x * y;
+
+const res = double(2, 5);
+
+console.log(res);
